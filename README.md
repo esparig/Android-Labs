@@ -1,4 +1,4 @@
-# Aplicaciones para Dispotivos Móviles
+# Aplicaciones para Dispositivos Móviles
 
 ## Práctica 1: Crear una lista que muestre los datos de Covid19 por municipio
 

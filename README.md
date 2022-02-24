@@ -134,7 +134,7 @@ public class IbexActivity extends AppCompatActivity {
 ```
 public class AdapterMunicipios extends RecyclerView.Adapter<AdapterMunicipios.ViewHolder> {
     
-    private ArrayList<IbexElement> elementos;
+    private ArrayList<IbexElement> elementos; //IbexElement is a class that contains some attributes like nombre, valor, diff...
     Context context;
     
     public AdapterMunicipios(Context c) {

@@ -188,3 +188,9 @@ public class AdapterMunicipios extends RecyclerView.Adapter<AdapterMunicipios.Vi
     }
     
 ```
+
+En este ejemplo nuestra fuente de datos es un fichero JSON que hemos descargado previamente y debemos "parsear" para almacenarlo, por ejemplo podría ser algo así:
+
+![json](sample_json.jpg)
+
+

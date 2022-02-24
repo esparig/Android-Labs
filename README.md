@@ -122,7 +122,7 @@ public class IbexActivity extends AppCompatActivity {
         
         //Set up the RecyclerView
         recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
-        recyclerView.setAdapter(new MunicipalitiesAdapter(this));
+        recyclerView.setAdapter(new ElementAdapter(this));
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this); //Also GridLayoutManager...
         recyclerView.setLayoutManager(layoutManager);
@@ -132,12 +132,12 @@ public class IbexActivity extends AppCompatActivity {
 
 **5. Crear un Adapter para personalizar cada elemento**
 ```
-public class AdapterMunicipios extends RecyclerView.Adapter<AdapterMunicipios.ViewHolder> {
+public class ElementAdapter extends RecyclerView.Adapter<ElementAdapter.ViewHolder> {
     
     private ArrayList<IbexElement> elementos; //IbexElement is a class that contains some attributes like nombre, valor, diff...
     Context context;
     
-    public AdapterMunicipios(Context c) {
+    public ElementAdapter(Context c) {
         context=c;
         Init();
     }
@@ -163,8 +163,8 @@ public class AdapterMunicipios extends RecyclerView.Adapter<AdapterMunicipios.Vi
 
         public ViewHolder(View view) {
             super(view);
-            municipio = (TextView) view.findViewById(R.id.nombre); //reference the views we defined in the layout
-            casos = (TextView) view.findViewById(R.id.valor);
+            nombre = (TextView) view.findViewById(R.id.nombre); //reference the views we defined in the layout
+            valor = (TextView) view.findViewById(R.id.valor);
             diff = (TextView) view.findViewById(R.id.diff);
         }
     }

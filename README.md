@@ -1,6 +1,6 @@
 # Aplicaciones para Dispositivos Móviles
 
-## Práctica 1: Crear una lista que muestre los datos de Covid19 por municipio
+## Práctica 1: Crear una lista que muestre nuestros datos (RecyclerView)
 
 ### Caso práctico similar: IBEX35
 
